@@ -1,0 +1,370 @@
+{
+  "health": [
+    {
+      "id": "h001",
+      "category": "health",
+      "question": "成年人每天建议饮用多少毫升水为宜？",
+      "options": ["500-1000毫升", "1500-2000毫升", "2500-3000毫升", "3500-4000毫升"],
+      "correctAnswer": 1,
+      "explanation": "成年人每天建议饮水量为1500-2000毫升，约等于8杯水，可根据体重和活动量适当调整。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/drinking-water-guide"
+    },
+    {
+      "id": "h002",
+      "category": "health",
+      "question": "以下哪种食物富含维生素C最多？",
+      "options": ["苹果", "橙子", "香蕉", "葡萄"],
+      "correctAnswer": 1,
+      "explanation": "橙子是富含维生素C的水果，每100克橙子约含53毫克维生素C，远高于其他选项。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/vitamin-c-foods"
+    },
+    {
+      "id": "h003",
+      "category": "health",
+      "question": "正常成年人的血压范围是多少？",
+      "options": ["收缩压<90mmHg，舒张压<60mmHg", "收缩压90-139mmHg，舒张压60-89mmHg", "收缩压140-159mmHg，舒张压90-99mmHg", "收缩压≥160mmHg，舒张压≥100mmHg"],
+      "correctAnswer": 1,
+      "explanation": "正常成年人血压正常值为收缩压90-139mmHg，舒张压60-89mmHg。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/blood-pressure-range"
+    },
+    {
+      "id": "h004",
+      "category": "health",
+      "question": "睡眠不足会导致以下哪种情况？",
+      "options": ["记忆力增强", "免疫力下降", "体重减轻", "视力改善"],
+      "correctAnswer": 1,
+      "explanation": "长期睡眠不足会导致免疫力下降、记忆力减退、体重增加等多种健康问题。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/sleep-deprivation-effects"
+    },
+    {
+      "id": "h005",
+      "category": "health",
+      "question": "以下哪项不是有氧运动？",
+      "options": ["慢跑", "游泳", "举重", "骑自行车"],
+      "correctAnswer": 2,
+      "explanation": "举重属于无氧运动，主要锻炼肌肉力量，而慢跑、游泳、骑自行车都是有氧运动。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/aerobic-vs-anaerobic"
+    },
+    {
+      "id": "h006",
+      "category": "health",
+      "question": "人体最大的器官是什么？",
+      "options": ["心脏", "肝脏", "皮肤", "肺"],
+      "correctAnswer": 2,
+      "explanation": "皮肤是人体最大的器官，成年人皮肤总面积约为1.5-2平方米。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/human-largest-organ"
+    },
+    {
+      "id": "h007",
+      "category": "health",
+      "question": "对眼睛有益的营养素是？",
+      "options": ["维生素A", "维生素B", "维生素C", "维生素D"],
+      "correctAnswer": 0,
+      "explanation": "维生素A对眼睛健康至关重要，缺乏会导致夜盲症等眼部疾病。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/eye-health-nutrition"
+    },
+    {
+      "id": "h008",
+      "category": "health",
+      "question": "饭后多长时间运动比较合适？",
+      "options": ["立即运动", "30分钟后", "1-2小时后", "3小时后"],
+      "correctAnswer": 2,
+      "explanation": "饭后1-2小时再进行运动较为适宜，避免影响消化。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/exercise-after-meal"
+    },
+    {
+      "id": "h009",
+      "category": "health",
+      "question": "正常成年人每天睡眠多少小时？",
+      "options": ["4-5小时", "6-7小时", "7-8小时", "9-10小时"],
+      "correctAnswer": 2,
+      "explanation": "正常成年人每天建议睡眠时间为7-8小时，有助于身体恢复和大脑功能。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/sleep-duration"
+    },
+    {
+      "id": "h010",
+      "category": "health",
+      "question": "吸烟对身体最直接的损害器官是？",
+      "options": ["胃", "肝脏", "肺", "肾脏"],
+      "correctAnswer": 2,
+      "explanation": "吸烟最直接损害肺部，是导致肺癌和慢性阻塞性肺疾病的主要原因。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/smoking-effects"
+    }
+  ],
+  "legal": [
+    {
+      "id": "l001",
+      "category": "legal",
+      "question": "我国法定结婚年龄是多少？",
+      "options": ["男20岁，女18岁", "男22岁，女20岁", "男24岁，女22岁", "男25岁，女23岁"],
+      "correctAnswer": 1,
+      "explanation": "根据《民法典》规定，结婚年龄，男不得早于二十二周岁，女不得早于二十周岁。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/legal-marriage-age"
+    },
+    {
+      "id": "l002",
+      "category": "legal",
+      "question": "劳动合同试用期最长不得超过多久？",
+      "options": ["3个月", "6个月", "12个月", "24个月"],
+      "correctAnswer": 1,
+      "explanation": "根据《劳动合同法》规定，三年以上固定期限和无固定期限的劳动合同，试用期不得超过六个月。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/probation-period"
+    },
+    {
+      "id": "l003",
+      "category": "legal",
+      "question": "消费者权益保护日是哪一天？",
+      "options": ["3月12日", "3月15日", "4月15日", "5月1日"],
+      "correctAnswer": 1,
+      "explanation": "每年3月15日是国际消费者权益日，旨在保护消费者权益。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/consumer-rights-day"
+    },
+    {
+      "id": "l004",
+      "category": "legal",
+      "question": "道路交通安全违法行为累积记分周期为多久？",
+      "options": ["6个月", "12个月", "18个月", "24个月"],
+      "correctAnswer": 1,
+      "explanation": "道路交通安全违法行为累积记分周期为12个月，满分为12分。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/traffic-score-cycle"
+    },
+    {
+      "id": "l005",
+      "category": "legal",
+      "question": "法定节假日加班工资应不低于工资的多少？",
+      "options": ["150%", "200%", "300%", "400%"],
+      "correctAnswer": 2,
+      "explanation": "法定休假日安排劳动者工作的，支付不低于工资的百分之三百的工资报酬。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/holiday-overtime-pay"
+    },
+    {
+      "id": "l006",
+      "category": "legal",
+      "question": "定金的数额由当事人约定，但不得超过主合同标的额的多少？",
+      "options": ["10%", "20%", "30%", "50%"],
+      "correctAnswer": 1,
+      "explanation": "定金的数额由当事人约定，但不得超过主合同标的额的百分之二十。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/deposit-limit"
+    },
+    {
+      "id": "l007",
+      "category": "legal",
+      "question": "一般诉讼时效期间为多少年？",
+      "options": ["1年", "2年", "3年", "5年"],
+      "correctAnswer": 2,
+      "explanation": "根据《民法典》规定，向人民法院请求保护民事权利的诉讼时效期间为三年。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/limitation-period"
+    },
+    {
+      "id": "l008",
+      "category": "legal",
+      "question": "未满多少周岁的人有违法行为的，不予行政处罚？",
+      "options": ["12周岁", "14周岁", "16周岁", "18周岁"],
+      "correctAnswer": 1,
+      "explanation": "不满十四周岁的人有违法行为的，不予行政处罚，责令监护人加以管教。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/minor-punishment"
+    },
+    {
+      "id": "l009",
+      "category": "legal",
+      "question": "房屋租赁期限不得超过多少年？",
+      "options": ["10年", "15年", "20年", "30年"],
+      "correctAnswer": 2,
+      "explanation": "租赁期限不得超过二十年。超过二十年的，超过部分无效。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/house-lease-term"
+    },
+    {
+      "id": "l010",
+      "category": "legal",
+      "question": "注册商标的有效期为多少年？",
+      "options": ["5年", "10年", "15年", "20年"],
+      "correctAnswer": 1,
+      "explanation": "注册商标的有效期为十年，自核准注册之日起计算。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/trademark-validity"
+    }
+  ],
+  "firstaid": [
+    {
+      "id": "f001",
+      "category": "firstaid",
+      "question": "发现有人触电后，首先应该怎么做？",
+      "options": ["直接用手拉开触电者", "立即切断电源", "拨打急救电话", "用铁棍挑开电线"],
+      "correctAnswer": 1,
+      "explanation": "发现有人触电后，应立即切断电源或用绝缘物挑开电线，切勿直接接触触电者。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/electric-shock-first-aid"
+    },
+    {
+      "id": "f002",
+      "category": "firstaid",
+      "question": "烫伤后正确的处理方法是？",
+      "options": ["涂抹牙膏", "立即用冷水冲洗15-30分钟", "挑破水泡", "用纱布紧紧包扎"],
+      "correctAnswer": 1,
+      "explanation": "烫伤后应立即用流动冷水冲洗伤处15-30分钟，降低皮肤温度，减轻损伤。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/burn-treatment"
+    },
+    {
+      "id": "f003",
+      "category": "firstaid",
+      "question": "心肺复苏（CPR）的按压频率应为每分钟多少次？",
+      "options": ["60-80次", "80-100次", "100-120次", "120-140次"],
+      "correctAnswer": 2,
+      "explanation": "心肺复苏胸外按压频率应为每分钟100-120次，深度为5-6厘米。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/cpr-guide"
+    },
+    {
+      "id": "f004",
+      "category": "firstaid",
+      "question": "气道异物梗阻的海姆立克急救法应如何操作？",
+      "options": ["让患者平躺", "站在患者身后，双手握拳抵住上腹部快速向上冲击", "拍打患者背部", "给患者喝水"],
+      "correctAnswer": 1,
+      "explanation": "海姆立克急救法：站在患者身后，双手握拳抵住患者上腹部快速向上冲击。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/heimlich-maneuver"
+    },
+    {
+      "id": "f005",
+      "category": "firstaid",
+      "question": "骨折后正确的处理是？",
+      "options": ["立即移动患者", "先固定骨折部位", "热敷伤处", "将骨折端复位"],
+      "correctAnswer": 1,
+      "explanation": "骨折后应先固定骨折部位，避免移动造成二次伤害，然后及时就医。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/fracture-first-aid"
+    },
+    {
+      "id": "f006",
+      "category": "firstaid",
+      "question": "运动扭伤后应该怎么做？",
+      "options": ["立即热敷", "立即冷敷", "立即按摩", "立即活动"],
+      "correctAnswer": 1,
+      "explanation": "扭伤后24-48小时内冷敷，可减轻肿胀和疼痛。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/sprain-treatment"
+    },
+    {
+      "id": "f007",
+      "category": "firstaid",
+      "question": "鼻出血时正确的做法是？",
+      "options": ["头向后仰", "头稍向前倾，用手指捏住鼻翼两侧", "平躺", "用纸巾塞住鼻孔"],
+      "correctAnswer": 1,
+      "explanation": "鼻出血时头稍向前倾，用手指捏住鼻翼两侧压迫止血，避免血液误吸。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/nosebleed-treatment"
+    },
+    {
+      "id": "f008",
+      "category": "firstaid",
+      "question": "以下哪种情况不宜进行心肺复苏？",
+      "options": ["患者无反应、无呼吸", "患者有意识但呼吸困难", "患者无意识无反应无脉搏", "患者呼吸心跳骤停"],
+      "correctAnswer": 1,
+      "explanation": "患者有意识时不应进行心肺复苏，应立即呼救并观察。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/when-to-use-cpr"
+    },
+    {
+      "id": "f009",
+      "category": "firstaid",
+      "question": "急救电话号码是？",
+      "options": ["110", "119", "120", "122"],
+      "correctAnswer": 2,
+      "explanation": "急救电话为120，110是报警电话，119是火警电话，122是交通事故报警电话。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/emergency-calls"
+    },
+    {
+      "id": "f010",
+      "category": "firstaid",
+      "question": "被动物咬伤后，最应该先做什么？",
+      "options": ["立即包扎伤口", "用肥皂水和流动清水冲洗伤口15分钟", "涂抹酒精消毒", "等待自然愈合"],
+      "correctAnswer": 1,
+      "explanation": "被动物咬伤后，应立即用肥皂水和流动清水交替冲洗伤口至少15分钟，然后就医。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/animal-bite-treatment"
+    }
+  ],
+  "finance": [
+    {
+      "id": "fn001",
+      "category": "finance",
+      "question": "以下哪种投资方式风险最低？",
+      "options": ["股票", "基金", "国债", "期货"],
+      "correctAnswer": 2,
+      "explanation": "国债由国家发行，以国家信用为担保，是风险最低的投资方式。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/investment-risk"
+    },
+    {
+      "id": "fn002",
+      "category": "finance",
+      "question": "个人所得税起征点目前是多少？",
+      "options": ["3500元", "5000元", "6000元", "8000元"],
+      "correctAnswer": 1,
+      "explanation": "目前我国个人所得税起征点为5000元/月。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/personal-income-tax"
+    },
+    {
+      "id": "fn003",
+      "category": "finance",
+      "question": "定期存款提前支取，利息如何计算？",
+      "options": ["按定期利率计算", "按活期利率计算", "按定期和活期各算一半", "不支付利息"],
+      "correctAnswer": 1,
+      "explanation": "定期存款提前支取，按支取日银行活期存款利率计息。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/deposit-withdrawal"
+    },
+    {
+      "id": "fn004",
+      "category": "finance",
+      "question": "信用卡账单日与还款日的说法正确的是？",
+      "options": ["账单日当天消费免息期最长", "还款日当天消费免息期最短", "账单日后第一天消费免息期最长", "免息期都是30天"],
+      "correctAnswer": 2,
+      "explanation": "账单日后第一天消费，免息期最长，可享受最长免息期。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/credit-card-billing"
+    },
+    {
+      "id": "fn005",
+      "category": "finance",
+      "question": "股票中的A股是指？",
+      "options": ["人民币普通股票", "外币特种股票", "香港上市股票", "美国上市股票"],
+      "correctAnswer": 0,
+      "explanation": "A股即人民币普通股票，以人民币标明面值，以人民币认购和买卖。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/what-is-a-stock"
+    },
+    {
+      "id": "fn006",
+      "category": "finance",
+      "question": "以下理财产品中流动性最强的是？",
+      "options": ["定期存款", "活期存款", "房产", "股票"],
+      "correctAnswer": 1,
+      "explanation": "活期存款可随时存取，流动性最强。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/liquidity-comparison"
+    },
+    {
+      "id": "fn007",
+      "category": "finance",
+      "question": "复利是指？",
+      "options": ["只对本金计算利息", "对本金和利息都计算利息", "按月计算利息", "按年计算利息"],
+      "correctAnswer": 1,
+      "explanation": "复利是指在计算利息时，把前一期的利息也算入本金，逐期滚算。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/compound-interest"
+    },
+    {
+      "id": "fn008",
+      "category": "finance",
+      "question": "五险一金中的一金是指？",
+      "options": ["企业年金", "住房公积金", "职业年金", "补充医疗保险"],
+      "correctAnswer": 1,
+      "explanation": "五险一金中的\"一金\"指的是住房公积金。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/five-insurances-one-fund"
+    },
+    {
+      "id": "fn009",
+      "category": "finance",
+      "question": "央行基准利率上调会导致？",
+      "options": ["存款利率下降", "贷款利率下降", "存款利率上升", "存贷款利率都上升"],
+      "correctAnswer": 3,
+      "explanation": "央行基准利率上调，商业银行的存贷款利率都会相应上调。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/interest-rate-hike"
+    },
+    {
+      "id": "fn010",
+      "category": "finance",
+      "question": "购买保险时，以下哪项最重要？",
+      "options": ["只看收益", "只看价格", "根据自身需求选择", "听从推销购买"],
+      "correctAnswer": 2,
+      "explanation": "购买保险应根据自身需求和经济状况选择适合的保险产品。",
+      "hintArticleUrl": "https://mock.baike.baike.com/article/insurance-buying-tips"
+    }
+  ]
+}
