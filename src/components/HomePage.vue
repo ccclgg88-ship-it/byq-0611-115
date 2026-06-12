@@ -38,13 +38,18 @@
         </ul>
       </div>
 
-      <button
-        class="start-btn"
-        :disabled="!canStart || loading"
-        @click="startGame"
-      >
-        {{ loading ? '加载中...' : '开始游戏' }}
-      </button>
+      <div class="action-buttons">
+        <button
+          class="start-btn"
+          :disabled="!canStart || loading"
+          @click="startGame"
+        >
+          {{ loading ? '加载中...' : '开始游戏' }}
+        </button>
+        <button class="wrongbook-btn" @click="openWrongBook">
+          📝 错题本
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -54,6 +59,10 @@ import { ref, onMounted, computed } from 'vue'
 import { useQuizStore } from '../stores/quiz'
 import { formatComboDisplay } from '../utils/score'
 import { getHighScore, getMaxComboRecord } from '../utils/session'
+
+const emit = defineEmits<{
+  openWrongBook: []
+}>()
 
 const store = useQuizStore()
 const loading = ref(true)
@@ -73,6 +82,10 @@ onMounted(async () => {
 
 function startGame() {
   store.startGame()
+}
+
+function openWrongBook() {
+  emit('openWrongBook')
 }
 </script>
 
@@ -183,8 +196,13 @@ function startGame() {
   color: #667eea;
 }
 
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
 .start-btn {
-  width: 100%;
+  flex: 1;
   padding: 16px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -204,5 +222,25 @@ function startGame() {
 .start-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.wrongbook-btn {
+  padding: 16px 24px;
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.wrongbook-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
 }
 </style>

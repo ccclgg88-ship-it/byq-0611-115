@@ -1,24 +1,33 @@
 <template>
   <div class="app">
-    <HomePage v-if="status === 'idle'" />
-    <GamePage v-else-if="status === 'playing' || status === 'paused'" />
-    <ResultPage v-else-if="status === 'finished'" />
+    <HomePage v-if="page === 'home'" @open-wrong-book="page = 'wrongBook'" />
+    <WrongBookPage v-else-if="page === 'wrongBook'" @back="page = 'home'" />
+    <GamePage v-else-if="page === 'game'" />
+    <ResultPage v-else-if="page === 'result'" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-import { storeToRefs } from 'pinia'
+import { ref, watch } from 'vue'
 import { useQuizStore } from './stores/quiz'
 import HomePage from './components/HomePage.vue'
 import GamePage from './components/GamePage.vue'
 import ResultPage from './components/ResultPage.vue'
+import WrongBookPage from './components/WrongBookPage.vue'
 
 const store = useQuizStore()
-const { status } = storeToRefs(store)
 
-onMounted(async () => {
-  await store.loadBank()
+type PageType = 'home' | 'game' | 'result' | 'wrongBook'
+const page = ref<PageType>('home')
+
+watch(() => store.status, (status) => {
+  if (status === 'idle') {
+    page.value = 'home'
+  } else if (status === 'playing' || status === 'paused') {
+    page.value = 'game'
+  } else if (status === 'finished') {
+    page.value = 'result'
+  }
 })
 </script>
 

@@ -89,7 +89,8 @@ export const useQuizStore = defineStore('quiz', () => {
  userAnswer: answerIndex,
  correctAnswer: question.correctAnswer,
  options: question.options,
- explanation: question.explanation
+ explanation: question.explanation,
+ category: question.category
  };
  wrongAnswers.value.push(record);
  reportWrongAnswer(record);

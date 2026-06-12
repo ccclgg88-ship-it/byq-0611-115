@@ -29,6 +29,10 @@ coverage/
 
 # Vite
 *.local
+.vite-runtime.config.ts
+
+# Runtime data
+backend/data/
 
 # TypeScript cache
 *.tsbuildinfo

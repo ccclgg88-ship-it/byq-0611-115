@@ -21,7 +21,24 @@ export interface WrongAnswerRecord {
   correctAnswer: number
   options: string[]
   explanation: string
+  category?: string
 }
+
+export interface WrongBookEntry {
+  questionId: string
+  category: string
+  question: string
+  options: string[]
+  correctAnswer: number
+  userAnswer: number
+  explanation: string
+  errorCount: number
+  mastered: boolean
+  lastWrongAt: number
+  createdAt: number
+}
+
+export type WrongBookFilter = 'all' | 'unmastered' | 'mastered'
 
 export interface GameState {
   status: GameStatus
