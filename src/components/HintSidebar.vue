@@ -6,17 +6,21 @@
     </div>
     <div class="hint-content">
       <div class="mock-article">
-        <div class="article-skeleton">
+        <div v-if="!loaded" class="article-skeleton">
           <div class="skeleton-line"></div>
           <div class="skeleton-line short"></div>
           <div class="skeleton-line"></div>
           <div class="skeleton-line medium"></div>
           <div class="skeleton-line short"></div>
-          <div class="skeleton-line"></div>
-          <div class="skeleton-line long"></div>
-          <div class="skeleton-line medium"></div>
-          <div class="skeleton-line short"></div>
-          <div class="skeleton-line"></div>
+        </div>
+        <div v-else class="article-body fade-in">
+          <div class="article-title">{{ articleTitle }}</div>
+          <div class="article-text">
+            <p>{{ articleContent }}</p>
+          </div>
+          <a class="article-link" :href="url" target="_blank" rel="noopener noreferrer">
+            🔗 查看完整百科原文
+          </a>
         </div>
         <p class="hint-note">💡 提示内容已加载，计时仍在继续</p>
         <p class="hint-url">{{ url }}</p>
@@ -30,10 +34,26 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 
 const props = defineProps<{
   url: string
+  explanation?: string
 }>()
 
 const countdown = ref(5)
+const loaded = ref(false)
 let timer: number | null = null
+let loadTimer: number | null = null
+
+const articleTitle = ref('')
+const articleContent = ref('')
+
+function buildArticleContent() {
+  if (props.explanation) {
+    articleTitle.value = '相关百科知识'
+    articleContent.value = props.explanation
+  } else {
+    articleTitle.value = '百科参考'
+    articleContent.value = '请参考下方链接获取详细知识。'
+  }
+}
 
 function startCountdown() {
   countdown.value = 5
@@ -53,16 +73,33 @@ function stopCountdown() {
   }
 }
 
+function startLoading() {
+  loaded.value = false
+  buildArticleContent()
+  if (loadTimer) {
+    clearTimeout(loadTimer)
+  }
+  loadTimer = window.setTimeout(() => {
+    loaded.value = true
+  }, 800)
+}
+
 onMounted(() => {
   startCountdown()
+  startLoading()
 })
 
 onUnmounted(() => {
   stopCountdown()
+  if (loadTimer) {
+    clearTimeout(loadTimer)
+    loadTimer = null
+  }
 })
 
 watch(() => props.url, () => {
   startCountdown()
+  startLoading()
 })
 </script>
 
@@ -140,6 +177,42 @@ watch(() => props.url, () => {
 .skeleton-line.long {
   width: 100%;
   height: 24px;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #667eea;
+}
+
+.article-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.article-link {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #e8eaf6;
+  color: #3f51b5;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.article-link:hover {
+  background: #c5cae9;
 }
 
 @keyframes shimmer {

@@ -76,7 +76,7 @@
     <LifelineButtons />
 
     <div v-if="store.hintVisible" class="hint-sidebar">
-      <HintSidebar :url="currentQuestion?.hintArticleUrl || ''" />
+      <HintSidebar :url="currentQuestion?.hintArticleUrl || ''" :explanation="currentQuestion?.explanation" />
     </div>
 
     <div v-if="status === 'paused'" class="pause-overlay">
